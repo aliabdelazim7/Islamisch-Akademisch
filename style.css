@@ -14,6 +14,7 @@
     --color-secondary: #0F172A;      /* Dark Navy */
     --color-accent: #D4AF37;         /* Warm Gold */
     --color-accent-light: #e6c151;   /* Light Accent Gold */
+    --color-accent-text: #967200;    /* Darker Gold for Text Contrast (WCAG AA Compliant) */
     --color-bg-soft: #F8FAFC;        /* Soft White */
     --color-bg-white: #FFFFFF;       /* Pure White */
     --color-text-dark: #1E293B;      /* Dark Charcoal */
@@ -493,7 +494,7 @@ html[dir="rtl"] .lang-option {
     gap: 6px;
     background-color: rgba(212, 175, 55, 0.1);
     border: 1px solid rgba(212, 175, 55, 0.2);
-    color: #a8831b;
+    color: var(--color-accent-text);
     font-size: 0.85rem;
     font-weight: 600;
     padding: 6px 14px;
@@ -989,7 +990,7 @@ html[dir="rtl"] .journey-step.active .journey-content {
 
 .program-pill {
     background-color: rgba(212, 175, 55, 0.1);
-    color: #a8831b;
+    color: var(--color-accent-text);
     font-size: 0.75rem;
     font-weight: 700;
     padding: 4px 10px;
@@ -1389,7 +1390,7 @@ html[dir="rtl"] .program-link:hover svg {
 
 .teacher-title {
     font-size: 0.85rem;
-    color: var(--color-accent);
+    color: var(--color-accent-text);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
