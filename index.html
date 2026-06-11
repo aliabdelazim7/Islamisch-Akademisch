@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Islamisch Akademisch — Premium Quran Academy</title>
+    <meta name="description" content="Strukturierter Quran-Unterricht, Tajweed und islamische Studien für Kinder und Erwachsene mit zertifizierten Lehrern. Buchen Sie Ihre kostenlose Probestunde.">
+    
+    <!-- SEO & Metadata -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Islamisch Akademisch">
+    <meta property="og:title" content="Islamisch Akademisch — Premium Quran Academy">
+    <meta property="og:description" content="Lernen Sie den Quran mit qualifizierten Lehrern von überall. Strukturierter Einzelunterricht für die ganze Familie.">
+    <meta property="og:type" content="website">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Schema Markup (SEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Islamisch Akademisch",
+      "description": "Premium online Quran academy offering structured recitation, Tajweed, and Islamic studies for kids and adults.",
+      "url": "https://islamisch-akademisch.de",
+      "logo": "https://islamisch-akademisch.de/assets/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "DE"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "184"
+      },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "0.00",
+        "description": "Free initial assessment and trial lesson"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ==========================================
+         HEADER / NAVIGATION
+         ========================================== -->
+    <header class="header">
+        <div class="container header-container">
+            <!-- Brand Logo -->
+            <a href="#" class="logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Modern Shield & Open Book Concept -->
+                    <path d="M50,15 L80,25 C80,55 50,85 50,85 C50,85 20,55 20,25 Z" fill="#0A4235" />
+                    <path d="M50,15 L80,25 C80,55 50,85 50,85 Z" fill="#0f5444" />
+                    <!-- Gold Ribs / Book Pages -->
+                    <path d="M32,38 C40,38 48,43 50,47 C52,43 60,38 68,38 M32,44 C40,44 48,49 50,53 C52,49 60,44 68,44 M32,50 C40,50 48,55 50,59 C52,55 60,50 68,50" stroke="#D4AF37" stroke-width="3" fill="none" stroke-linecap="round"/>
+                    <line x1="50" y1="42" x2="50" y2="65" stroke="#D4AF37" stroke-width="3" stroke-linecap="round"/>
+                </svg>
+                <span>Islamisch Akademisch</span>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="nav-menu">
+                <a href="#why-us" class="nav-link" data-i18n="nav-why-choose-us">Warum Wir</a>
+                <a href="#journey" class="nav-link" data-i18n="nav-journey">Lernweg</a>
+                <a href="#programs" class="nav-link" data-i18n="nav-programs">Programme</a>
+                <a href="#teachers" class="nav-link" data-i18n="nav-teachers">Lehrer</a>
+                <a href="#faq" class="nav-link" data-i18n="nav-faq">FAQ</a>
+            </nav>
+
+            <!-- Language Switcher & Nav CTAs -->
+            <div class="nav-actions">
+                <!-- Language Selector -->
+                <div class="lang-switcher">
+                    <button class="lang-btn" id="langBtn" onclick="toggleLangDropdown(event)">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                        <span id="langBtnText">DE</span>
+                        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option active" data-lang="de">Deutsch</button>
+                        <button class="lang-option" data-lang="en">English</button>
+                        <button class="lang-option" data-lang="ar">العربية</button>
+                    </div>
+                </div>
+
+                <!-- Desktop CTA -->
+                <a href="#lead-form-section" class="btn btn-primary btn-secondary cta-scroll-btn d-none-mobile" data-i18n="nav-cta" style="padding: 0.5rem 1.25rem; font-size: 0.9rem; min-height: auto;">Kostenlose Probestunde</a>
+
+                <!-- Mobile Menu Button -->
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="#why-us" class="mobile-nav-link" data-i18n="nav-why-choose-us">Warum Wir</a>
+        <a href="#journey" class="mobile-nav-link" data-i18n="nav-journey">Lernweg</a>
+        <a href="#programs" class="mobile-nav-link" data-i18n="nav-programs">Programme</a>
+        <a href="#teachers" class="mobile-nav-link" data-i18n="nav-teachers">Lehrer</a>
+        <a href="#faq" class="mobile-nav-link" data-i18n="nav-faq">FAQ</a>
+        <a href="#lead-form-section" class="btn btn-primary cta-scroll-btn" data-i18n="nav-cta" style="margin-top: 20px; width: 80%;">Kostenlose Probestunde</a>
+    </div>
+
+
+    <!-- ==========================================
+         SECTION 1: HERO
+         ========================================== -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <!-- Text Content -->
+                <div class="hero-content">
+                    <div class="hero-tag">
+                        <span></span>
+                        <p data-i18n="hero-badge">Premium Online Quran Akademie</p>
+                    </div>
+                    <h1 class="hero-title">
+                        <span data-i18n="hero-title-1">Lernen Sie den Quran mit </span><br>
+                        <span data-i18n="hero-title-highlight">qualifizierten Lehrern</span><br>
+                        <span data-i18n="hero-title-2"> von überall</span>
+                    </h1>
+                    <p class="hero-desc" data-i18n="hero-desc">
+                        Strukturierter Quran-Unterricht, Tajweed und islamische Studien für Kinder und Erwachsene. Individuell auf Sie abgestimmt.
+                    </p>
+                    <div class="btn-group">
+                        <a href="#lead-form-section" class="btn btn-primary cta-scroll-btn" data-i18n="hero-cta-start">Jetzt Starten</a>
+                        <a href="#lead-form-section" class="btn btn-white cta-scroll-btn" data-i18n="hero-cta-assess">Kostenlose Einschätzung</a>
+                    </div>
+                </div>
+
+                <!-- Premium Non-Cliché Visual Graphics -->
+                <div class="hero-visual">
+                    <div class="hero-circle-bg"></div>
+                    <div class="hero-card">
+                        <!-- Simulated Classroom Card mockup -->
+                        <div class="hero-card-header">
+                            <div class="hero-avatar">IA</div>
+                            <div>
+                                <h4 style="font-weight:700; font-size: 0.95rem; color: var(--color-secondary);" data-i18n="hero-card-status">Live Einzelunterricht</h4>
+                                <span class="hero-badge" data-i18n="hero-card-tag">Akademischer Standard</span>
+                            </div>
+                        </div>
+                        <div style="background-color: var(--color-bg-soft); height: 180px; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; border: 1px dashed var(--color-border); position: relative;">
+                            <!-- Stylish Geometric Audio/Video mock wave -->
+                            <div style="display: flex; gap: 4px; align-items: center;">
+                                <span style="display:block; width: 4px; height: 30px; background-color: var(--color-primary); border-radius: 2px; animation: float 1s infinite alternate;"></span>
+                                <span style="display:block; width: 4px; height: 50px; background-color: var(--color-accent); border-radius: 2px; animation: float 0.8s infinite alternate 0.2s;"></span>
+                                <span style="display:block; width: 4px; height: 70px; background-color: var(--color-primary-light); border-radius: 2px; animation: float 1.2s infinite alternate 0.4s;"></span>
+                                <span style="display:block; width: 4px; height: 40px; background-color: var(--color-primary); border-radius: 2px; animation: float 0.7s infinite alternate 0.1s;"></span>
+                                <span style="display:block; width: 4px; height: 20px; background-color: var(--color-accent); border-radius: 2px; animation: float 0.9s infinite alternate 0.3s;"></span>
+                            </div>
+                            <!-- Absolute floating status badge -->
+                            <div style="position: absolute; top: 12px; left: 12px; background-color: rgba(10, 66, 53, 0.9); color: white; padding: 4px 8px; border-radius: var(--radius-sm); font-size: 0.75rem; font-weight:600; display:flex; align-items:center; gap: 4px;">
+                                <span style="display:inline-block; width:6px; height:6px; background-color:#10b981; border-radius: 50%;"></span>
+                                Teacher Connected
+                            </div>
+                        </div>
+                        <!-- Statistic Pill -->
+                        <div class="hero-stat-pill">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="color: var(--color-accent);">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                <circle cx="9" cy="7" r="4"/>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                            </svg>
+                            <div>
+                                <span data-i18n="hero-stat-students">Aktive Schüler</span>
+                                <p style="font-weight: 800; font-size: 0.85rem; color: var(--color-secondary);">500+</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 2: WHY CHOOSE US
+         ========================================== -->
+    <section class="why-choose-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="why-tag">Vorteile</span>
+                <h2 class="section-title" data-i18n="why-title">Warum Islamisch Akademisch?</h2>
+                <p class="section-desc" data-i18n="why-desc">Wir kombinieren traditionelle Quran-Wissenschaften mit modernen Lehrmethoden für den deutschsprachigen Raum.</p>
+            </div>
+
+            <div class="benefits-grid">
+                <!-- Card 1: Certified Teachers -->
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title" data-i18n="benefit-1-title">Zertifizierte Lehrkräfte</h3>
+                    <p class="benefit-desc" data-i18n="benefit-1-desc">Unsere Lehrer haben Ijazah von renommierten islamischen Universitäten (z.B. Al-Azhar).</p>
+                </div>
+
+                <!-- Card 2: Flexible Schedules -->
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <polyline points="12 6 12 12 16 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title" data-i18n="benefit-2-title">Flexible Zeitpläne</h3>
+                    <p class="benefit-desc" data-i18n="benefit-2-desc">Lernen Sie, wann es Ihnen passt. Wir passen uns Ihrem Familien- und Berufsleben an.</p>
+                </div>
+
+                <!-- Card 3: One-to-One -->
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 7a4 4 0 1 0 0-8 4 4 0 0 0 0 8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title" data-i18n="benefit-3-title">1-zu-1 Einzelunterricht</h3>
+                    <p class="benefit-desc" data-i18n="benefit-3-desc">Maximale Aufmerksamkeit und individuelles Tempo. Keine Ablenkung wie in Gruppenklassen.</p>
+                </div>
+
+                <!-- Card 4: Kids & Adults -->
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20z" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title" data-i18n="benefit-4-title">Für Kinder & Erwachsene</h3>
+                    <p class="benefit-desc" data-i18n="benefit-4-desc">Speziell entwickelte Lehrpläne für jede Altersklasse, spielerisch für Kinder, tiefgründig für Erwachsene.</p>
+                </div>
+
+                <!-- Card 5: Female Teachers -->
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zM12 14c-6 0-7 4-7 8h14c0-4-1-8-7-8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="18" cy="6" r="2" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title" data-i18n="benefit-5-title">Lehrerinnen Verfügbar</h3>
+                    <p class="benefit-desc" data-i18n="benefit-5-desc">Für unsere Schwestern und Töchter bieten wir qualifizierte Lehrerinnen für eine angenehme Lernatmosphäre.</p>
+                </div>
+
+                <!-- Card 6: Custom Plans -->
+                <div class="benefit-card">
+                    <div class="benefit-icon-wrapper">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <polyline points="14 2 14 8 20 8" fill="none" stroke="currentColor" stroke-width="2"/>
+                            <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <polyline points="10 9 9 9 8 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="benefit-title" data-i18n="benefit-6-title">Individuelle Lernpläne</h3>
+                    <p class="benefit-desc" data-i18n="benefit-6-desc">Jeder lernt anders. Wir erstellen einen maßgeschneiderten Plan basierend auf Ihrem aktuellen Stand.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 3: LEARNING JOURNEY
+         ========================================== -->
+    <section class="journey" id="journey">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="journey-tag">Ihr Weg</span>
+                <h2 class="section-title" data-i18n="journey-title">In 5 Schritten zum Erfolg</h2>
+                <p class="section-desc" data-i18n="journey-desc">Unser strukturierter Prozess sorgt dafür, dass Sie und Ihre Kinder nachhaltige Fortschritte erzielen.</p>
+            </div>
+
+            <div class="journey-timeline">
+                <!-- Step 1 -->
+                <div class="journey-step active">
+                    <div class="journey-badge">1</div>
+                    <div class="journey-content">
+                        <h3 class="journey-step-title" data-i18n="journey-step-1-title">Formular ausfüllen</h3>
+                        <p class="journey-step-desc" data-i18n="journey-step-1-desc">Tragen Sie Ihre Daten ein und wählen Sie Ihr Wunschprogramm aus.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="journey-step">
+                    <div class="journey-badge">2</div>
+                    <div class="journey-content">
+                        <h3 class="journey-step-title" data-i18n="journey-step-2-title">Kostenloses Erstgespräch</h3>
+                        <p class="journey-step-desc" data-i18n="journey-step-2-desc">Wir ermitteln Ihr Niveau und besprechen Ihre persönlichen Ziele.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="journey-step">
+                    <div class="journey-badge">3</div>
+                    <div class="journey-content">
+                        <h3 class="journey-step-title" data-i18n="journey-step-3-title">Individueller Lernplan</h3>
+                        <p class="journey-step-desc" data-i18n="journey-step-3-desc">Wir erstellen einen auf Sie zugeschnittenen Lehrplan und wählen den perfekten Lehrer aus.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="journey-step">
+                    <div class="journey-badge">4</div>
+                    <div class="journey-content">
+                        <h3 class="journey-step-title" data-i18n="journey-step-4-title">Unterricht starten</h3>
+                        <p class="journey-step-desc" data-i18n="journey-step-4-desc">Beginnen Sie Ihren interaktiven Einzelunterricht über unser Premium-Klassenzimmer.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="journey-step">
+                    <div class="journey-badge">5</div>
+                    <div class="journey-content">
+                        <h3 class="journey-step-title" data-i18n="journey-step-5-title">Fortschritt verfolgen</h3>
+                        <p class="journey-step-desc" data-i18n="journey-step-5-desc">Regelmäßige Berichte und Feedback-Gespräche sichern Ihren langfristigen Erfolg.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 4: PROGRAMS
+         ========================================== -->
+    <section class="programs" id="programs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="programs-tag">Lehrpläne</span>
+                <h2 class="section-title" data-i18n="programs-title">Unsere Bildungsprogramme</h2>
+                <p class="section-desc" data-i18n="programs-desc">Wählen Sie das passende Programm für Ihre spirituelle und akademische Weiterbildung.</p>
+            </div>
+
+            <div class="programs-grid">
+                <!-- Program 1 -->
+                <div class="program-card">
+                    <div>
+                        <div class="program-meta">
+                            <span class="program-pill" data-i18n="prog-badge-arabic">Grundlage</span>
+                            <div class="program-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="program-title" data-i18n="prog-1-title">Quran Lesen lernen</h3>
+                        <p class="program-desc" data-i18n="prog-1-desc">Lernen Sie das arabische Alphabet und die korrekte Aussprache (Makharij) von Grund auf mit der Norania-Methode.</p>
+                    </div>
+                    <div class="program-footer">
+                        <span class="program-duration">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" fill="none"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <span data-i18n="prog-duration">Flexible Einheiten</span>
+                        </span>
+                        <a href="#lead-form-section" class="program-link cta-scroll-btn">
+                            <span data-i18n="prog-cta">Mehr Details</span>
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Program 2 -->
+                <div class="program-card">
+                    <div>
+                        <div class="program-meta">
+                            <span class="program-pill" data-i18n="prog-badge-quran">Beliebt</span>
+                            <div class="program-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="program-title" data-i18n="prog-2-title">Quran Auswendiglernen (Hifz)</h3>
+                        <p class="program-desc" data-i18n="prog-2-desc">Strukturiertes Memorieren des Quran mit bewährten Methoden und ständiger Wiederholung zur Festigung.</p>
+                    </div>
+                    <div class="program-footer">
+                        <span class="program-duration">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" fill="none"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <span data-i18n="prog-duration">Flexible Einheiten</span>
+                        </span>
+                        <a href="#lead-form-section" class="program-link cta-scroll-btn">
+                            <span data-i18n="prog-cta">Mehr Details</span>
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Program 3 -->
+                <div class="program-card">
+                    <div>
+                        <div class="program-meta">
+                            <span class="program-pill" data-i18n="prog-badge-tajweed">Wichtig</span>
+                            <div class="program-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="program-title" data-i18n="prog-3-title">Tajweed-Regeln</h3>
+                        <p class="program-desc" data-i18n="prog-3-desc">Meistern Sie die Kunst der Rezitation nach den klassischen Regeln des Tajweed für eine melodiöse Lesung.</p>
+                    </div>
+                    <div class="program-footer">
+                        <span class="program-duration">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" fill="none"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <span data-i18n="prog-duration">Flexible Einheiten</span>
+                        </span>
+                        <a href="#lead-form-section" class="program-link cta-scroll-btn">
+                            <span data-i18n="prog-cta">Mehr Details</span>
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Program 4 -->
+                <div class="program-card">
+                    <div>
+                        <div class="program-meta">
+                            <span class="program-pill" data-i18n="prog-badge-islamic">Empfohlen</span>
+                            <div class="program-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="program-title" data-i18n="prog-4-title">Islamische Studien</h3>
+                        <p class="program-desc" data-i18n="prog-4-desc">Altered-gerechtes Wissen über Aqidah, Fiqh, Hadith und die Biografie des Propheten (Seerah) für den Alltag.</p>
+                    </div>
+                    <div class="program-footer">
+                        <span class="program-duration">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" fill="none"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <span data-i18n="prog-duration">Flexible Einheiten</span>
+                        </span>
+                        <a href="#lead-form-section" class="program-link cta-scroll-btn">
+                            <span data-i18n="prog-cta">Mehr Details</span>
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Program 5 -->
+                <div class="program-card">
+                    <div>
+                        <div class="program-meta">
+                            <span class="program-pill" data-i18n="prog-badge-arabic">Grundlage</span>
+                            <div class="program-icon">
+                                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+                            </div>
+                        </div>
+                        <h3 class="program-title" data-i18n="prog-5-title">Arabische Sprache</h3>
+                        <p class="program-desc" data-i18n="prog-5-desc">Verstehen Sie den Quran im Original. Kurse für klassisches Arabisch (Fusha) für alle Niveaustufen.</p>
+                    </div>
+                    <div class="program-footer">
+                        <span class="program-duration">
+                            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="currentColor" fill="none"/><polyline points="12 6 12 12 16 14"/></svg>
+                            <span data-i18n="prog-duration">Flexible Einheiten</span>
+                        </span>
+                        <a href="#lead-form-section" class="program-link cta-scroll-btn">
+                            <span data-i18n="prog-cta">Mehr Details</span>
+                            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 5: PARENT TRUST & STATISTICS
+         ========================================== -->
+    <section class="trust">
+        <div class="container">
+            <div class="trust-grid">
+                <!-- Left Text Content -->
+                <div class="trust-content">
+                    <span class="section-tag trust-tag" data-i18n="trust-tag">Vertrauen</span>
+                    <h2 class="trust-title" data-i18n="trust-title">Die Sicherheit und der Erfolg Ihrer Familie</h2>
+                    <p class="trust-desc" data-i18n="trust-desc">Als Eltern möchten Sie nur das Beste für Ihre Kinder. Wir bieten ein sicheres, professionelles und motivierendes Online-Klassenzimmer. Sie erhalten monatliche Fortschrittsberichte und können jederzeit am Unterricht teilhaben.</p>
+                    <a href="#lead-form-section" class="btn btn-accent cta-scroll-btn" data-i18n="hero-cta-assess">Kostenlose Einschätzung</a>
+                </div>
+
+                <!-- Right Statistics Grid -->
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-num" data-i18n="stat-students-num">500+</div>
+                        <div class="stat-label" data-i18n="stat-students-lbl">Aktive Schüler</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num" data-i18n="stat-teachers-num">20+</div>
+                        <div class="stat-label" data-i18n="stat-teachers-lbl">Zertifizierte Lehrer</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num" data-i18n="stat-countries-num">15+</div>
+                        <div class="stat-label" data-i18n="stat-countries-lbl">Länder</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num" data-i18n="stat-satisfaction-num">95%</div>
+                        <div class="stat-label" data-i18n="stat-satisfaction-lbl">Zufriedene Eltern</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 6: TESTIMONIALS SLIDER
+         ========================================== -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="test-tag">Erfahrungsberichte</span>
+                <h2 class="section-title" data-i18n="test-title">Was unsere Familien sagen</h2>
+                <p class="section-desc" data-i18n="test-desc">Echte Stimmen von Eltern und erwachsenen Schülern aus ganz Europa.</p>
+            </div>
+
+            <!-- Slider Wrapper -->
+            <div class="testimonials-slider-container">
+                <div class="testimonials-slider" id="testimonialsSlider">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                            </div>
+                            <p class="testimonial-quote" data-i18n="test-1-quote">«Islamisch Akademisch hat das Lernen für meine Kinder komplett verändert. Sie freuen sich jede Woche auf ihre Lehrerin aus Ägypten. Die Fortschritte im Hifz sind unglaublich!»</p>
+                            <div class="testimonial-user">
+                                <div class="testimonial-avatar">MK</div>
+                                <div class="testimonial-info">
+                                    <h4 data-i18n="test-1-name">Mariam K.</h4>
+                                    <p data-i18n="test-1-role">Mutter von Elias (8) & Sara (11) - Frankfurt</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                            </div>
+                            <p class="testimonial-quote" data-i18n="test-2-quote">«Als Berufstätiger war es schwer, eine Moschee mit passenden Zeiten zu finden. Hier lerne ich Tajweed bequem um 21:00 Uhr. Mein Lehrer ist extrem geduldig und hochprofessionell.»</p>
+                            <div class="testimonial-user">
+                                <div class="testimonial-avatar">AM</div>
+                                <div class="testimonial-info">
+                                    <h4 data-i18n="test-2-name">Dr. Ahmed M.</h4>
+                                    <p data-i18n="test-2-role">Tajweed-Schüler - München</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-card">
+                            <div class="testimonial-stars">
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                                <svg viewBox="0 0 20 20"><path d="M10 15l-5.88 3.09 1.12-6.54L.48 6.91l6.57-.96L10 0l2.95 5.95 6.57.96-4.76 4.64 1.12 6.54z"/></svg>
+                            </div>
+                            <p class="testimonial-quote" data-i18n="test-3-quote">«Die monatlichen Berichte helfen uns als Eltern sehr zu sehen, was gelernt wurde. Es ist sehr organisiert und hat nichts mit den alten Online-Klassen auf Skype zu tun.»</p>
+                            <div class="testimonial-user">
+                                <div class="testimonial-avatar">YB</div>
+                                <div class="testimonial-info">
+                                    <h4 data-i18n="test-3-name">Yasmin B.</h4>
+                                    <p data-i18n="test-3-role">Mutter von Younes (6) - Wien</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevSlide" aria-label="Previous Slide">
+                        <svg viewBox="0 0 24 24"><path d="M15 19l-7-7 7-7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                    </button>
+                    <div class="slider-dots" id="sliderDots"></div>
+                    <button class="slider-btn" id="nextSlide" aria-label="Next Slide">
+                        <svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 7: TEACHERS SHOWCASE
+         ========================================== -->
+    <section class="teachers" id="teachers">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="teachers-tag">Team</span>
+                <h2 class="section-title" data-i18n="teachers-title">Lernen Sie unsere Lehrer kennen</h2>
+                <p class="section-desc" data-i18n="teachers-desc">Ein Team aus hochqualifizierten, pädagogisch geschulten Lehrkräften, die fließend Deutsch, Englisch und Arabisch sprechen.</p>
+            </div>
+
+            <div class="teachers-grid">
+                <!-- Teacher 1 -->
+                <div class="teacher-card">
+                    <div class="teacher-avatar-large">MA</div>
+                    <h3 class="teacher-name" data-i18n="teacher-1-name">Sheikh Mahmoud Al-Azhari</h3>
+                    <p class="teacher-title" data-i18n="teacher-1-title">Hauptlehrer für Quran & Tajweed</p>
+                    <p class="teacher-desc" data-i18n="teacher-1-desc">Absolvent der Al-Azhar Universität mit Ijazah in den 10 Rezitationsarten. 8 Jahre Online-Lehrerfahrung.</p>
+                    <div class="teacher-skills">
+                        <span class="teacher-skill-badge" data-i18n="badge-quran-hifz">Quran & Hifz</span>
+                        <span class="teacher-skill-badge" data-i18n="badge-tajweed-rules">Tajweed</span>
+                        <span class="teacher-skill-badge" data-i18n="badge-azhar">Al-Azhar</span>
+                        <span class="teacher-skill-badge" data-i18n="badge-german">Deutsch</span>
+                    </div>
+                </div>
+
+                <!-- Teacher 2 -->
+                <div class="teacher-card">
+                    <div class="teacher-avatar-large">ZA</div>
+                    <h3 class="teacher-name" data-i18n="teacher-2-name">Ustadha Zainab Ahmed</h3>
+                    <p class="teacher-title" data-i18n="teacher-2-title">Spezialistin für Kinder & Hifz</p>
+                    <p class="teacher-desc" data-i18n="teacher-2-desc">Lizenziert für Quran-Memorierung mit kindgerechtem pädagogischem Hintergrund. Spricht fließend Deutsch & Arabisch.</p>
+                    <div class="teacher-skills">
+                        <span class="teacher-skill-badge" data-i18n="badge-quran-hifz">Quran & Hifz</span>
+                        <span class="teacher-skill-badge" data-i18n="badge-kids">Kinder-Pädagogik</span>
+                        <span class="teacher-skill-badge" data-i18n="badge-german">Deutsch</span>
+                        <span class="teacher-skill-badge" data-i18n="badge-arabic-lang">Arabisch</span>
+                    </div>
+                </div>
+
+                <!-- Teacher 3 -->
+                <div class="teacher-card">
+                    <div class="teacher-avatar-large">FM</div>
+                    <h3 class="teacher-name" data-i18n="teacher-3-name">Ustadha Fatima Mansour</h3>
+                    <p class="teacher-title" data-i18n="teacher-3-title">Lehrerin für Arabisch & Islamische Studien</p>
+                    <p class="teacher-desc" data-i18n="teacher-3-desc">Master in Islamischen Studien. Expertin für das Heranführen von europäischen Kindern an die arabische Sprache.</p>
+                    <div class="teacher-skills">
+                        <span class="teacher-skill-badge" data-i18n="badge-arabic-lang">Arabisch</span>
+                        <span class="teacher-skill-badge" data-i18n="badge-islamic-studies">Islamische Studien</span>
+                        <span class="teacher-skill-badge" data-i18n="badge-kids">Kinder-Pädagogik</span>
+                        <span class="teacher-skill-badge" data-i18n="badge-german">Deutsch</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         SECTION 8: FAQ ACCORDION
+         ========================================== -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-i18n="faq-tag">Fragen</span>
+                <h2 class="section-title" data-i18n="faq-title">Häufig gestellte Fragen</h2>
+                <p class="section-desc" data-i18n="faq-desc">Alles, was Sie über unseren Ablauf, die Preise und den Unterricht wissen müssen.</p>
+            </div>
+
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span data-i18n="faq-1-q">Wie lange dauert eine Unterrichtsstunde?</span>
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-content-inner" data-i18n="faq-1-a">
+                            In der Regel dauert eine Unterrichtseinheit im Einzelunterricht 30 oder 45 Minuten. Für jüngere Kinder empfehlen wir 30 Minuten, um die Aufmerksamkeit hochzuhalten. Erwachsene wählen meist 45 bis 60 Minuten.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span data-i18n="faq-2-q">Was kostet der Unterricht?</span>
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-content-inner" data-i18n="faq-2-a">
+                            Unsere Tarife sind sehr fair und richten sich nach der Anzahl der Stunden pro Woche. Nach Ihrer kostenlosen Einschätzung und Probestunde erstellen wir Ihnen ein unverbindliches Angebot. Es gibt keine versteckten Kosten.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span data-i18n="faq-3-q">Wie wähle ich den passenden Lehrer aus?</span>
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-content-inner" data-i18n="faq-3-a">
+                            Wir wählen den Lehrer basierend auf dem Alter des Schülers, dem aktuellen Sprachniveau und dem ausgewählten Programm aus. Sie können auch explizit eine weibliche Lehrkraft anfordern.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span data-i18n="faq-4-q">Gibt es eine kostenlose Probestunde?</span>
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-content-inner" data-i18n="faq-4-a">
+                            Ja, absolut. Jede Anmeldung beginnt mit einer komplett kostenlosen und unverbindlichen Probestunde. Hier lernen Sie den Lehrer kennen und wir ermitteln das Einstiegsniveau.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-header">
+                        <span data-i18n="faq-5-q">Welche Sprachen sprechen die Lehrer?</span>
+                        <span class="faq-icon">
+                            <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                        </span>
+                    </button>
+                    <div class="faq-content">
+                        <div class="faq-content-inner" data-i18n="faq-5-a">
+                            Alle unsere Lehrer sprechen fließend Arabisch. Die für den europäischen Raum ausgewählten Lehrer sprechen zudem fließend Deutsch oder Englisch, um Erklärungen verständlich zu machen.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         LEAD GENERATION FORM SECTION
+         ========================================== -->
+    <section class="lead-section" id="lead-form-section">
+        <div class="container lead-container">
+            <div class="section-header" style="margin-bottom: var(--spacing-lg);">
+                <span class="section-tag form-tag" data-i18n="form-tag">Anmeldung</span>
+                <h2 class="section-title text-white" data-i18n="form-title" style="color:#ffffff;">Buchen Sie Ihre kostenlose Einschätzung</h2>
+                <p class="section-desc text-white" data-i18n="form-desc" style="color: rgba(248, 250, 252, 0.8);">Machen Sie den ersten Schritt. Füllen Sie das Formular aus, und wir kontaktieren Sie innerhalb von 24 Stunden per WhatsApp oder E-Mail.</p>
+            </div>
+
+            <div class="lead-card" id="leadCard">
+                <!-- Registration Form -->
+                <form id="leadForm" novalidate>
+                    <div class="form-grid">
+                        <!-- Parent Name -->
+                        <div class="form-group">
+                            <label class="form-label" for="parentName" data-i18n="lbl-parent-name">Name des Elternteils (für Kinder)</label>
+                            <input type="text" class="form-control" id="parentName" name="parentName">
+                        </div>
+
+                        <!-- Student Name -->
+                        <div class="form-group">
+                            <label class="form-label" for="studentName" data-i18n="lbl-student-name">Name des Schülers</label>
+                            <input type="text" class="form-control" id="studentName" name="studentName" required>
+                            <span class="form-error-msg"></span>
+                        </div>
+
+                        <!-- Age -->
+                        <div class="form-group">
+                            <label class="form-label" for="studentAge" data-i18n="lbl-age">Alter des Schülers</label>
+                            <input type="number" class="form-control" id="studentAge" name="studentAge" required min="4" max="99">
+                            <span class="form-error-msg"></span>
+                        </div>
+
+                        <!-- Country -->
+                        <div class="form-group">
+                            <label class="form-label" for="country" data-i18n="lbl-country">Wohnort (Land)</label>
+                            <input type="text" class="form-control" id="country" name="country" required>
+                            <span class="form-error-msg"></span>
+                        </div>
+
+                        <!-- Instruction Language -->
+                        <div class="form-group">
+                            <label class="form-label" for="instructionLang" data-i18n="lbl-lang">Bevorzugte Unterrichtssprache</label>
+                            <select class="form-control" id="instructionLang" name="instructionLang" required>
+                                <option value="" data-i18n="opt-select">-- Bitte wählen --</option>
+                                <option value="de" data-i18n="opt-lang-de">Deutsch</option>
+                                <option value="en" data-i18n="opt-lang-en">Englisch</option>
+                                <option value="ar" data-i18n="opt-lang-ar">Arabisch</option>
+                            </select>
+                            <span class="form-error-msg"></span>
+                        </div>
+
+                        <!-- Program Interest -->
+                        <div class="form-group">
+                            <label class="form-label" for="programInterest" data-i18n="lbl-program">Gewünschtes Programm</label>
+                            <select class="form-control" id="programInterest" name="programInterest" required>
+                                <option value="" data-i18n="opt-select">-- Bitte wählen --</option>
+                                <option value="reading" data-i18n="opt-prog-read">Quran Lesen lernen</option>
+                                <option value="memorization" data-i18n="opt-prog-memorize">Quran Auswendiglernen (Hifz)</option>
+                                <option value="tajweed" data-i18n="opt-prog-tajweed">Tajweed-Regeln</option>
+                                <option value="studies" data-i18n="opt-prog-islamic">Islamische Studien</option>
+                                <option value="arabic" data-i18n="opt-prog-arabic">Arabische Sprache</option>
+                            </select>
+                            <span class="form-error-msg"></span>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="form-group">
+                            <label class="form-label" for="email" data-i18n="lbl-email">E-Mail-Adresse</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                            <span class="form-error-msg"></span>
+                        </div>
+
+                        <!-- Phone Number -->
+                        <div class="form-group">
+                            <label class="form-label" for="phone" data-i18n="lbl-phone">Telefonnummer</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                            <span class="form-error-msg"></span>
+                        </div>
+
+                        <!-- WhatsApp Number -->
+                        <div class="form-group">
+                            <label class="form-label" for="whatsapp" data-i18n="lbl-whatsapp">WhatsApp-Nummer (für schnelle Absprachen)</label>
+                            <input type="tel" class="form-control" id="whatsapp" name="whatsapp" required>
+                            <span class="form-error-msg"></span>
+                        </div>
+
+                        <!-- Preferred Schedule -->
+                        <div class="form-group">
+                            <label class="form-label" for="preferredSchedule" data-i18n="lbl-schedule">Bevorzugte Unterrichtszeiten</label>
+                            <select class="form-control" id="preferredSchedule" name="preferredSchedule" required>
+                                <option value="" data-i18n="opt-select">-- Bitte wählen --</option>
+                                <option value="morning" data-i18n="opt-sched-morning">Vormittags (Wochenende)</option>
+                                <option value="afternoon" data-i18n="opt-sched-afternoon">Nachmittags (Wochentags)</option>
+                                <option value="evening" data-i18n="opt-sched-evening">Abends (Wochentags)</option>
+                                <option value="flexible" data-i18n="opt-sched-flexible">Flexibel / Nach Absprache</option>
+                            </select>
+                            <span class="form-error-msg"></span>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group form-span-2">
+                            <label class="form-label" for="message" data-i18n="lbl-message">Ihre Nachricht oder Vorkenntnisse (Optional)</label>
+                            <textarea class="form-control" id="message" name="message"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Submit CTA Button -->
+                    <button type="submit" class="btn btn-accent form-submit-btn">
+                        <span data-i18n="btn-submit-form">Meine Quran-Reise starten</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="5" y1="12" x2="19" y2="12"/>
+                            <polyline points="12 5 19 12 12 19"/>
+                        </svg>
+                    </button>
+                </form>
+
+                <!-- Success Screen Overlay -->
+                <div class="form-success-container" id="formSuccess">
+                    <div class="form-success-icon">
+                        <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3 class="form-success-title" data-i18n="form-success-title">Anmeldung erfolgreich!</h3>
+                    <p class="form-success-desc" data-i18n="form-success-desc">Vielen Dank für Ihr Vertrauen. Unser Bildungsberater wird sich innerhalb der nächsten 24 Stunden per WhatsApp oder E-Mail bei Ihnen melden, um Ihre kostenlose Probestunde zu vereinbaren.</p>
+                    <button class="btn btn-accent" id="btnSuccessReset" data-i18n="form-success-btn">Zur Startseite</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ==========================================
+         FOOTER
+         ========================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <!-- Col 1: Brand -->
+                <div class="footer-brand">
+                    <a href="#" class="logo" style="margin-bottom: var(--spacing-sm);">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="height:32px;">
+                            <path d="M50,15 L80,25 C80,55 50,85 50,85 C50,85 20,55 20,25 Z" fill="#ffffff" />
+                            <path d="M32,38 C40,38 48,43 50,47 C52,43 60,38 68,38 M32,44 C40,44 48,49 50,53 C52,49 60,44 68,44" stroke="#D4AF37" stroke-width="3" fill="none"/>
+                            <line x1="50" y1="42" x2="50" y2="65" stroke="#D4AF37" stroke-width="3"/>
+                        </svg>
+                        <span style="color:#ffffff;">Islamisch Akademisch</span>
+                    </a>
+                    <p data-i18n="footer-about-desc">Eine der führenden Online-Akademien für Quran, Tajweed und islamische Studien im europäischen Raum. Wissenschaftlich, strukturiert und vertrauenswürdig.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" fill="currentColor"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="YouTube">
+                            <svg viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" fill="none" stroke="currentColor" stroke-width="2"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Col 2: Programs -->
+                <div>
+                    <h4 class="footer-title" data-i18n="footer-col-programs">Programme</h4>
+                    <ul class="footer-links">
+                        <li><a href="#programs" class="cta-scroll-btn" data-i18n="prog-1-title">Quran Lesen lernen</a></li>
+                        <li><a href="#programs" class="cta-scroll-btn" data-i18n="prog-2-title">Quran Auswendiglernen (Hifz)</a></li>
+                        <li><a href="#programs" class="cta-scroll-btn" data-i18n="prog-3-title">Tajweed-Regeln</a></li>
+                        <li><a href="#programs" class="cta-scroll-btn" data-i18n="prog-4-title">Islamische Studien</a></li>
+                        <li><a href="#programs" class="cta-scroll-btn" data-i18n="prog-5-title">Arabische Sprache</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Links -->
+                <div>
+                    <h4 class="footer-title" data-i18n="footer-col-links">Nützliche Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#why-us" data-i18n="nav-why-choose-us">Warum Wir</a></li>
+                        <li><a href="#journey" data-i18n="nav-journey">Lernweg</a></li>
+                        <li><a href="#teachers" data-i18n="nav-teachers">Lehrer</a></li>
+                        <li><a href="#faq" data-i18n="nav-faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact -->
+                <div>
+                    <h4 class="footer-title" data-i18n="footer-col-contact">Kontakt</h4>
+                    <div class="footer-contact-item">
+                        <!-- WhatsApp Icon -->
+                        <svg viewBox="0 0 24 24"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                        <span>WhatsApp: +49 176 12345678</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <!-- Email Icon -->
+                        <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="22,6 12,13 2,6" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+                        <span>info@islamisch-akademisch.de</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <span data-i18n="footer-rights">© 2026 Islamisch Akademisch. Alle Rechte vorbehalten.</span>
+                <div style="display:flex; gap:16px;">
+                    <a href="#" style="color:inherit; text-decoration:none;" data-i18n="footer-privacy">Datenschutz</a>
+                    <a href="#" style="color:inherit; text-decoration:none;" data-i18n="footer-terms">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- ==========================================
+         SMART LEAD CAPTURE: SLIDE-UP CTA BANNER
+         ========================================== -->
+    <div class="slide-up-cta" id="slideCtaBanner">
+        <div class="cta-banner-content">
+            <div class="cta-banner-text">
+                <h4 data-i18n="slide-cta-title">Bereit für den Quran?</h4>
+                <p data-i18n="slide-cta-desc">Sichern Sie sich heute Ihre kostenlose Probestunde.</p>
+            </div>
+            <div class="cta-banner-actions">
+                <button class="btn btn-accent cta-scroll-btn" data-i18n="slide-cta-btn" style="padding: 6px 16px; font-size: 0.85rem; min-height: 38px;">Kostenlos Testen</button>
+                <button class="cta-close-btn" id="closeSlideCta" aria-label="Close CTA">
+                    <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2"/><line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2"/></svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ==========================================
+         STICKY CTA FOR MOBILE (Thumb-Friendly Navigation)
+         ========================================== -->
+    <div class="mobile-sticky-cta" id="mobileStickyCta">
+        <a href="#lead-form-section" class="btn btn-accent cta-scroll-btn" data-i18n="nav-cta">Probestunde</a>
+        <a href="https://wa.me/4917612345678" class="btn btn-primary" style="background-color: #25d366; box-shadow: 0 4px 14px rgba(37, 211, 102, 0.25);">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 6px;">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.248 8.477 3.517 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 2.766 1.488 4.708 1.489 5.432 0 9.865-4.407 9.867-9.84.001-2.63-1.019-5.101-2.871-6.958C16.49 1.988 14.037 1.053 11.996 1.053c-5.438 0-9.871 4.41-9.873 9.844-.001 2.01.527 3.97 1.53 5.724L2.61 21.39l4.037-1.476z"/>
+            </svg>
+            WhatsApp
+        </a>
+    </div>
+
+
+    <!-- ==========================================
+         EXIT INTENT POPUP MODAL
+         ========================================== -->
+    <div class="modal-overlay" id="exitModal">
+        <div class="modal-content">
+            <!-- Top Graphics Header -->
+            <div class="modal-header-img">
+                <!-- Glowing Golden Shield -->
+                <div class="modal-logo-icon">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M50,15 L80,25 C80,55 50,85 50,85 C50,85 20,55 20,25 Z" fill="#0A4235" />
+                        <path d="M32,41 C40,41 48,46 50,50 C52,50 60,41 68,41" stroke="#D4AF37" stroke-width="4" fill="none"/>
+                        <line x1="50" y1="45" x2="50" y2="70" stroke="#D4AF37" stroke-width="4"/>
+                    </svg>
+                </div>
+                <!-- Background decorative book SVG -->
+                <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg>
+            </div>
+            
+            <!-- Modal Close button -->
+            <button class="modal-close-icon-btn" id="closeModalBtn" aria-label="Close Modal">
+                <svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2"/><line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2"/></svg>
+            </button>
+
+            <!-- Modal Content Body -->
+            <div class="modal-body">
+                <h3 class="modal-title" data-i18n="exit-title">Warten Sie noch einen Moment!</h3>
+                <p class="modal-desc" data-i18n="exit-desc">Verlassen Sie uns nicht ohne Ihre kostenlose Einstufungssitzung (Wert: 35€). In nur 15 Minuten ermitteln unsere Lehrer den perfekten Quran-Lernweg für Sie oder Ihr Kind.</p>
+                <button class="btn btn-accent" id="modalActionBtn" data-i18n="exit-btn" style="width: 100%;">Jetzt Probestunde sichern</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+</body>
+</html>
