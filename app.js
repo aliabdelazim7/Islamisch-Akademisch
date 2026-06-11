@@ -806,7 +806,7 @@ const formSuccess = document.getElementById("formSuccess");
 const leadCard = document.getElementById("leadCard");
 
 // Paste your Google Web App Script URL here after deploying it
-const googleSheetURL = ""; 
+const googleSheetURL = "https://script.google.com/macros/s/AKfycbwsneRw_0ojz_BUqqnVoRdDzklTMUAVfQdi7FHapIhTAsI8S-ju5G--DOep-vCwVl4/exec"; 
 
 function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
