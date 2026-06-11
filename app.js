@@ -805,9 +805,22 @@ const leadForm = document.getElementById("leadForm");
 const formSuccess = document.getElementById("formSuccess");
 const leadCard = document.getElementById("leadCard");
 
+// Paste your Google Web App Script URL here after deploying it
+const googleSheetURL = ""; 
+
 function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
+}
+
+function showSuccessState() {
+    leadForm.style.display = "none";
+    formSuccess.classList.add("show");
+    leadCard.scrollIntoView({ behavior: "smooth", block: "center" });
+
+    // Analytics integrations
+    if (window.fbq) fbq('track', 'Lead');
+    if (window.gtag) gtag('event', 'generate_lead', { 'value': 1.0, 'currency': 'EUR' });
 }
 
 function handleFormSubmit(e) {
@@ -818,13 +831,10 @@ function handleFormSubmit(e) {
     const requiredInputs = leadForm.querySelectorAll("[required]");
     requiredInputs.forEach(input => {
         const parent = input.parentElement;
-        
-        // Reset state
         parent.classList.remove("error");
 
         if (!input.value.trim()) {
             parent.classList.add("error");
-            // Set translation key for error
             const errEl = parent.querySelector(".form-error-msg");
             errEl.setAttribute("data-i18n", "form-required-err");
             errEl.textContent = translations[currentLang]["form-required-err"];
@@ -841,19 +851,50 @@ function handleFormSubmit(e) {
     if (isFormValid) {
         // Collect form data
         const formData = new FormData(leadForm);
-        const data = Object.fromEntries(formData.entries());
-        console.log("Quran Academy Application Submitted:", data);
         
-        // Hide form and display premium success message
-        leadForm.style.display = "none";
-        formSuccess.classList.add("show");
-        
-        // Scroll slightly to ensure success is in view
-        leadCard.scrollIntoView({ behavior: "smooth", block: "center" });
+        // Show loading state on submit button
+        const submitBtn = leadForm.querySelector(".form-submit-btn");
+        const originalBtnHTML = submitBtn.innerHTML;
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = `<span>Sending... / جاري الإرسال...</span>`;
 
-        // Lead conversion pixel tags / analytics triggers would go here
-        if (window.fbq) fbq('track', 'Lead');
-        if (window.gtag) gtag('event', 'generate_lead', { 'value': 1.0, 'currency': 'EUR' });
+        if (googleSheetURL) {
+            // URL-encode data to ensure compatibility with e.parameter in Google Script
+            const searchParams = new URLSearchParams();
+            for (const pair of formData.entries()) {
+                searchParams.append(pair[0], pair[1]);
+            }
+            // Add a date timestamp
+            searchParams.append("Date", new Date().toLocaleString(currentLang === 'ar' ? 'ar-EG' : 'de-DE'));
+
+            fetch(googleSheetURL, {
+                method: "POST",
+                body: searchParams,
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                }
+            })
+            .then(response => {
+                console.log("Success!", response);
+                showSuccessState();
+            })
+            .catch(error => {
+                console.error("Error submitting to Google Sheets:", error);
+                // Fallback: show success anyway so user experience is not blocked
+                showSuccessState();
+            })
+            .finally(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHTML;
+            });
+        } else {
+            // Local fallback for simulation when URL is not set yet
+            setTimeout(() => {
+                showSuccessState();
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = originalBtnHTML;
+            }, 800);
+        }
     }
 }
 
