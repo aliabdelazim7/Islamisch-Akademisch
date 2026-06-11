@@ -987,7 +987,10 @@ exitModal.addEventListener("click", (e) => {
 function scrollToForm() {
     exitModal.classList.remove("show");
     slideCtaBanner.classList.remove("show");
-    document.getElementById("leadFormSection").scrollIntoView({ behavior: "smooth" });
+    menuToggle.classList.remove("remove"); // safety reset
+    menuToggle.classList.remove("active");
+    mobileNav.classList.remove("open");
+    document.getElementById("lead-form-section").scrollIntoView({ behavior: "smooth" });
 }
 
 modalActionBtn.addEventListener("click", scrollToForm);
