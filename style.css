@@ -2143,11 +2143,8 @@ html[dir="rtl"] .footer-links a:hover {
 
 @media (max-width: 480px) {
     .logo span {
-        font-size: 1.1rem;
-        max-width: 150px;
+        font-size: 1.05rem;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
     }
     .logo svg {
         height: 28px;
@@ -2155,5 +2152,11 @@ html[dir="rtl"] .footer-links a:hover {
     .lang-btn {
         padding: 0.4rem 0.6rem;
         font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .logo span {
+        font-size: 0.95rem;
     }
 }
